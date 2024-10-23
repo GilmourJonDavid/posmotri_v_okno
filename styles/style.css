@@ -15,15 +15,13 @@ html {
   inline-size: 1200px;
   block-size: 100%;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   font-size: 18px;
   font-weight: 400;
   line-height: 16.2px;
-  border: 1px solid #FFFFFF;
-  
-
+  border: 1px solid #ffffff;
 }
 
 h1,
@@ -69,7 +67,6 @@ fieldset {
   gap: 30px;
   width: 1140px;
   height: 534px;
-  
 }
 
 .result {
@@ -77,7 +74,6 @@ fieldset {
   flex-direction: column;
   justify-content: flex-end;
   gap: 16px;
-
 }
 
 .result__video-container {
@@ -92,30 +88,26 @@ fieldset {
   height: inherit;
 }
 
-
 .content__details {
   display: flex;
   gap: 26px;
   flex-direction: column;
   height: 100%;
   width: 100%;
-  
 }
 
 .title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 70.5px;
   text-align: left;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
-
 }
 
 .content__accent {
   color: #545050;
-
 }
 
 .content__list {
@@ -129,22 +121,20 @@ fieldset {
   gap: 30px;
 }
 
-
- /*i'll try to set some styles to scrollbar, i suppose u didn't ask me to, but default ones frustrates
+/*i'll try to set some styles to scrollbar, i suppose u didn't ask me to, but default ones frustrates
 me alot especialy in safari, i'll comment those styles incase it is a mistake */
 
 .content__list::-webkit-scrollbar {
   background-color: inherit;
   width: 5px;
-  
-} 
+}
 
 .content__list::-webkit-scrollbar-thumb {
   background-color: #545050;
   opacity: 0.5;
   border-radius: 10rem;
 }
-  
+
 .content__video-card {
   display: flex;
   align-content: flex-end;
@@ -154,7 +144,6 @@ me alot especialy in safari, i'll comment those styles incase it is a mistake */
   width: 194px;
   height: 103px;
   object-fit: cover;
-
 }
 
 .content__video-card-description-container {
@@ -165,35 +154,30 @@ me alot especialy in safari, i'll comment those styles incase it is a mistake */
   text-decoration: none;
 }
 
-.content__video-card-title{
-  font-family: Oswald;
+.content__video-card-title {
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
-  color:#FFFFFF;
-
+  color: #ffffff;
 }
 
 .content__video-card-description {
-font-family: Fira Sans Condensed;
-font-size: 18px;
-font-weight: 400;
-line-height: 16.2px;
-text-align: left;
-color: #FFFFFF;
-text-transform: capitalize;
+  font-family: Fira Sans Condensed, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16.2px;
+  text-align: left;
+  color: #ffffff;
+  text-transform: capitalize;
 }
-
-
-
 
 .search-form {
   display: flex;
   justify-content: space-between;
   align-content: flex-end;
-
 }
 
 .search-form__fieldset {
@@ -204,23 +188,22 @@ text-transform: capitalize;
 }
 
 .search-form__fieldset-title {
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
   text-align: left;
-
 }
 
-.search-form__label { /*checkbox conditions coditions selector */
+.search-form__label {
+  /*checkbox conditions coditions selector */
   display: flex;
   flex-direction: row;
   width: fit-content;
 }
 
-
 .search-form__label-text {
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
@@ -237,7 +220,7 @@ text-transform: capitalize;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   width: 19px;
   height: 19px;
   margin-right: 6px;
@@ -245,10 +228,10 @@ text-transform: capitalize;
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox:after {
   display: block;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 15px;
   height: 15px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   content: "";
 }
 
@@ -256,30 +239,22 @@ text-transform: capitalize;
   outline: none;
 }
 
-.search-form__label:has(:focus-visible) {
-  outline: 1px solid #FFFFFF;
-  outline-offset: 2px;
-}
-
-.search-form__label:hover {
+.search-form__label:not(.search-form__textfield):hover {
   cursor: pointer;
-}
-
-.search-form__label-text:hover {
   text-decoration: underline;
 }
 
 
 /* buttons down there*/
 .button {
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.6px;
   text-align: center;
-  color:#FFFFFF;
+  color: #ffffff;
   background-color: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
 
 .search-form__submit-button {
@@ -292,40 +267,42 @@ text-transform: capitalize;
   width: 399px;
 }
 
-.button:hover, .content__list-item:hover {
+.button:hover,
+.content__list-item:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
-.button:active , .content__list-item:active {
+.button:active,
+.content__list-item:active {
   background-color: #545050;
-  outline: 1px solid #FFFFFF; /* in chrome border disapears in active condition */
+  outline: 1px solid #ffffff; /* in chrome border disapears in active condition */
   text-decoration: none;
 }
 
-.button:focus, .content__list-item:focus {
+.button:focus,
+.content__list-item:focus {
   outline: none;
 }
- .button:focus-visible, .content__list-item:focus-visible {
-  outline: 1px solid #FFFFFF;
+.button:focus-visible,
+.content__list-item:focus-visible {
+  outline: 1px solid #ffffff;
   outline-offset: 2px;
- }
+}
 
 
-/* cities list*/
-
-.search-form__textfield { /* this is cities list form - should add diferent conditions for it*/
+.search-form__textfield {
   appearance: none;
   width: 225px;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
   text-align: left;
   background-color: inherit;
-  color:#FFFFFF;
+  color: #ffffff;
   border-width: 1px 1px;
-  border-color: #FFFFFF transparent;
+  border-color: #ffffff transparent;
   border-style: solid;
 }
 
@@ -333,16 +310,13 @@ text-transform: capitalize;
   outline: none;
 }
 
-.search-form__textfield:focus-visible:not(:active) {
-  outline: 1px solid #FFFFFF;
+.search-form__label:has(:not(:active):focus-visible) {
+  outline: 1px solid #ffffff;
   outline-offset: 2px;
 }
 
 .search-form__textfield:active {
-border-color: #FFFFFF;
-outline-offset: none;
+  border-color: #ffffff;
+  outline: none;
 }
 
-.search-form__textfield:hover {
-  cursor:text;
-}
