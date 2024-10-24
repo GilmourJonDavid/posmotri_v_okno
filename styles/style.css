@@ -6,6 +6,9 @@
 
 html {
   block-size: 100%;
+  display: flex;
+  justify-content: center;
+  
 }
 
 .page {
@@ -21,7 +24,6 @@ html {
   font-size: 18px;
   font-weight: 400;
   line-height: 16.2px;
-  border: 1px solid #ffffff;
 }
 
 h1,
@@ -121,20 +123,6 @@ fieldset {
   gap: 30px;
 }
 
-/*i'll try to set some styles to scrollbar, i suppose u didn't ask me to, but default ones frustrates
-me alot especialy in safari, i'll comment those styles incase it is a mistake */
-
-.content__list::-webkit-scrollbar {
-  background-color: inherit;
-  width: 5px;
-}
-
-.content__list::-webkit-scrollbar-thumb {
-  background-color: #545050;
-  opacity: 0.5;
-  border-radius: 10rem;
-}
-
 .content__video-card {
   display: flex;
   align-content: flex-end;
@@ -174,6 +162,40 @@ me alot especialy in safari, i'll comment those styles incase it is a mistake */
   text-transform: capitalize;
 }
 
+/*conditions for cards*/
+.content__card-link {
+  display:block;
+  margin: 2px;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:not(:active):focus-visible {
+  outline: 1px solid #ffffff;
+}
+
+.content__card-link:active {
+  background-color: #545050;
+
+}
+
+.content__card-link:not(:active):hover .content__video-card-title {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.content__card-link:not(:active):hover .content__video-card-description  {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
 .search-form {
   display: flex;
   justify-content: space-between;
@@ -195,8 +217,8 @@ me alot especialy in safari, i'll comment those styles incase it is a mistake */
   text-align: left;
 }
 
+/*checkbox conditions coditions selector */
 .search-form__label {
-  /*checkbox conditions coditions selector */
   display: flex;
   flex-direction: row;
   width: fit-content;
@@ -239,9 +261,9 @@ me alot especialy in safari, i'll comment those styles incase it is a mistake */
   outline: none;
 }
 
-.search-form__label:not(.search-form__textfield):hover {
-  cursor: pointer;
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 
@@ -259,7 +281,7 @@ me alot especialy in safari, i'll comment those styles incase it is a mistake */
 
 .search-form__submit-button {
   width: 194px;
-  max-height: 34px;
+  height: 34px;
   align-self: flex-end;
 }
 
@@ -267,8 +289,7 @@ me alot especialy in safari, i'll comment those styles incase it is a mistake */
   width: 399px;
 }
 
-.button:hover,
-.content__list-item:hover {
+.button:hover {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -319,4 +340,6 @@ me alot especialy in safari, i'll comment those styles incase it is a mistake */
   border-color: #ffffff;
   outline: none;
 }
-
+.search-form__textfield:hover {
+  text-decoration: none;
+}
